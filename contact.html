@@ -21,34 +21,103 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     </script>
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-family: 'Trebuchet MS';
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            font-weight: 1000;
+        }
+
+        body {
+            text-align: center;
+            background-image: url("backshot.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        nav {
+            color: white;
+            background: rgba(255, 0, 0, 0);
+        }
+
+        div {
+            color: white;
+        }
+
+        ul,
+        li,
+        a {
+            color: white;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        input {
+            font-size: 40px;
+            color: black;
+        }
+
+        textarea {
+            padding: 30px;
+            width: 100px;
+
+        }
+
+        button {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><h1><strong>Arroyo Photo</strong></h1></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand" href="#">
+            <h1 class="display-3.5"><strong>Diana Arroyo Photography</strong></h1>
+        </div>
         <span class="navbar-toggler" type="span" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </span>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html"><h4>Home</h4>
-                        <span class="sr-only">(current)</span>
+                    <a class="nav-link" href="./index.html">
+                        <h4>Home</h4>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./portfolio.html"><h4>Portfolio</h4></a>
+                    <a class="nav-link" href="./portfolio.html">
+                        <h4>Galleries</h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./session.html"><h4>Session Info</h4></a>
+                    <a class="nav-link" href="./about.html">
+                        <h4>About</h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./about.html"><h4>About</h4></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html"><h4>Contact</h4></a>
+                    <a class="nav-link" href="./contact.html">
+                        <h4>Contact</h4>
+                        <span class="sr-only">(current)</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -56,47 +125,65 @@
 
 
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
 
-    <form class="col m2 p2">
-        <fieldset>
-            <legend>Contact</legend>
 
-            <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
-                        value="runningfree84@gmail.com">
-                </div>
-                <label for="staticEmail" class="col-sm-2 col-form-label">Instagram</label>
-                <div class="col-sm-10">
-                    
-                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="viragoimages">
-                    <a href="#" class="fa fa-instagram"></a>
-                </div>
-            
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Contact me:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
-                    else.</small>
-            </div>
-            
 
-            
-            
-           
-            <fieldset class="form-group">
-                <legend>Sliders</legend>
-                <label for="customRange1">Example range</label>
-                <input type="range" class="custom-range" id="customRange1">
-            </fieldset>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </fieldset>
+        <div>
+            <h3>Instagram:</h3>
+            <h4>diana_shoots</h4>
+            <h3>Email:</h3>
+            <h4>
+                dianaarroyophotography@gmail.com
+            </h4>
+            <a href="#https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
+            <a href="#dianaarroyophotography@gmail.com" class="fa fa-google"></a>
+        </div>
+        <form class="col m2 p2">
+            <fieldset>
+                <legend></legend>
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Contact me:</label>
+        <form>
+            <input type="email" aria-describedby="emailHelp" placeholder="Please Enter Email">
+            <button>Submit</button>
+            <div id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
+                else.</div>
+        </form>
+
+    </div>
+    </fieldset>
     </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <footer class="welcomeText form-group">
+        <a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
+        <a href="https://www.gmail.com" class="fa fa-google"></a>
+    </footer>
+
+
+
+
+    <p class="lead">
+        <a class="btn btn-primary btn-md" href="./portfolio.html" role="button">Galleries</a>
+    </p>
 
 </body>
-
 
 </html>
