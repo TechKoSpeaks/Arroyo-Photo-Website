@@ -15,7 +15,7 @@
 html,
 body {
   text-align: center;
-  background-image: url("/images/backshot.jpg");
+  background-image: url("backshot.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover !important;
