@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,13 +19,9 @@
 
 
     <style>
-html,
+        html,
         body {
             text-align: center;
-            background-image: url("backshot.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover !important;
             color: white;
             max-width: 100%;
             max-height: 100%;
@@ -89,12 +85,51 @@ html,
             color: black;
         }
 
+        nav {
+
+
+            color: white;
+
+        }
+
+        nav li {
+            display: inline-flex;
+            margin: auto;
+        }
+
+        a:hover {
+            color: rgb(122, 85, 255);
+        }
+
+        div.gallery {
+            align-items: center;
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 200px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        /* MEDIA QUERIES */
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             body {
 
                 width: 100%;
                 height: 100%;
-                background: stretch;
             }
 
         }
@@ -103,6 +138,7 @@ html,
             .navheader {
                 font-size: 50px;
             }
+
             .navbar li {
                 text-align: center;
                 margin-right: 20px;
@@ -130,27 +166,11 @@ html,
                 padding-right: 12px;
 
             }
+
             h3 {
                 font-size: 10px;
             }
         }
-
-        nav {
-
-
-            color: white;
-
-        }
-
-        nav li {
-            display: inline-flex;
-            margin: auto;
-        }
-
-        a:hover {
-            color: rgb(122, 85, 255);
-        }
-        
     </style>
 </head>
 
@@ -183,11 +203,46 @@ html,
         <fieldset>
             <legend></legend>
 
-            <div class="form-group">
-                <h2 class="display-3">Photos</h2>
-                <p class="lead">Get Ready for some amazing business.</p>
+            <div class="form">
+                <div class="container">
+                    <h2 class="display-3">Photos</h2>
+                    <div class="col">
+                        <div class="row">
+
+                            <div class="gallery col">
+                                <a target="_blank" href="https://viragoimages.shootproof.com/gallery/14020354/">
+                                  <img src="/images/aleanddru.jpg" alt="Cinque Terre" width="600" height="400">
+                                </a>
+                                <div class="desc">ALEJANDRO AND DRU</div>
+                              </div>
+                              <div class="gallery col">
+                                <a target="_blank" href="/images/background.jpg">
+                                  <img src="/images/background.jpg" alt="Cinque Terre" width="600" height="400">
+                                </a>
+                                <div class="desc">Nature Photos</div>
+                              </div>
+                              <div class="gallery col">
+                                <a target="_blank" href="/images/backshot.jpg">
+                                  <img src="/images/backshot.jpg" alt="Cinque Terre" width="600" height="400">
+                                </a>
+                                <div class="desc">Ralph and Suze Engagement</div>
+                              </div>
+                              <div class="gallery col">
+                                <a target="_blank" href="https://viragoimages.shootproof.com/gallery/13202225/">
+                                  <img src="/images/alejandro.jpg" alt="Cinque Terre" width="600" height="400">
+                                </a>
+                                <div class="desc">ALEJANDRO</div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="lead">All Images Are My Own Copyright 2021 <strong>&copy;</strong></p>
+
                 <hr class="my-4">
             </div>
+
     </form>
     <br />
     <br />
@@ -201,7 +256,7 @@ html,
 
     <footer class="welcomeText form-group">
         <a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
-            <a href="https://www.gmail.com" class="fa fa-google"></a>
+        <a href="https://www.gmail.com" class="fa fa-google"></a>
     </footer>
 
 
@@ -213,5 +268,5 @@ html,
 
 </body>
 
-    
+
 </html>
