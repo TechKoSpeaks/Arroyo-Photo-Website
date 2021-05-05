@@ -140,6 +140,7 @@
 
                 width: auto;
                 height: auto;
+                background: center no-repeat;
             }
 
         }
@@ -157,10 +158,35 @@
 
         @media screen and (max-width: 600px) {
             .navheader {
-                font-size: 23px;
+                font-size: 45px;
                 text-align: center;
                 padding: 1px;
+                margin: 2px;
+                line-height: 26pt;
             }
+
+            .navbar li {
+                text-align: center;
+                margin-right: 10px;
+            }
+
+            a:hover {
+                color: rgb(122, 85, 255)
+            }
+
+            .navitems {
+                font-size: 14px;
+                padding-right: 12px;
+
+            }
+
+            h3 {
+                font-size: 10px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+        }
 
             .navbar li {
                 text-align: center;
@@ -189,6 +215,8 @@
         <div class="navheader navbar-brand" href="./index.html">
             <strong>Diana Arroyo Photography</strong>
         </div>
+        <br/>
+        <br/>
 
         <ul class="navitems">
             <li><a href="./index.html" id="Logo">Home</a></li>
