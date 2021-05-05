@@ -42,12 +42,18 @@
             display: flex;
         }
 
-        h1,
-        h2,
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
         h3,
         h4 {
             text-align: center;
             font-weight: 1000;
+            font-size: 30px
         }
 
 
@@ -157,25 +163,6 @@
             color: rgb(122, 85, 255);
         }
 
-
-        ::placeholder {
-            /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: rgb(255, 255, 255);
-            opacity: 1;
-            font-size: 20px;
-            /* Firefox */
-        }
-
-        :-ms-input-placeholder {
-            /* Internet Explorer 10-11 */
-            color: rgb(255, 255, 255);
-        }
-
-        ::-ms-input-placeholder {
-            /* Microsoft Edge */
-            color: rgb(255, 255, 255);
-        }
-
         .message {
             color: black;
             width: 300px;
@@ -211,7 +198,7 @@
     <div>
 
         <div>
-            <h1><strong>Contact</strong></h1>
+            <h1><strong>Contact</strong></h2>
             <legend></legend>
             <h3>Instagram:</h3>
             <h4><a href="https://www.instagram.com/diana_shoots/">diana_shoots</a></h4>
@@ -252,7 +239,7 @@
                 <div class="fcf-form-group">
                     <label for="Message" class="fcf-label">Your message</label>
                     <div class="fcf-input-group">
-                        <textarea class="message" id="Message" name="Message" class="fcf-form-control" rows="6"
+                        <textarea class="message" id="Message" name="Message" class="fcf-form-control" rows="10"
                             maxlength="3000" required></textarea>
                     </div>
                 </div>
