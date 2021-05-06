@@ -46,19 +46,21 @@
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 55px;
         }
 
         h2 {
-            font-size: 50px;
+            font-size: 45px;
         }
         h3,
         h4 {
             text-align: center;
             font-weight: 1000;
-            font-size: 30px
+            font-size: 25px
         }
-
+        h5 {
+            font-size: 20px;
+        }
 
         div {
             color: white;
@@ -68,20 +70,6 @@
         li,
         a {
             color: white;
-        }
-
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50%;
-        }
-
-        input {
-            font-size: 40px;
-            color: black;
         }
 
         textarea {
@@ -113,9 +101,9 @@
 
         }
 
-        @media screen and (min-width: 601px) {
+        @media screen and (min-width: 610px) {
             .navheader {
-                font-size: 50px;
+                font-size: 60px;
             }
 
             .navbar li {
@@ -124,14 +112,24 @@
             }
         }
 
+        @media screen and (min-device-width : 601px) and (max-device-width : 800px){
+            .navheader {
+                font-size: 45px;
+            }
+
+        }
+
         @media screen and (max-width: 600px) {
             .navheader {
                 font-size: 45px;
                 text-align: center;
                 padding: 1px;
                 margin: 2px;
-                line-height: 26pt;
+                line-height: 27pt;
             }
+            .textbox {
+            font-size: 16px;
+        }
 
             .navbar li {
                 text-align: center;
@@ -154,6 +152,9 @@
             h2 {
                 font-size: 32px;
             }
+            h5 {
+                font-size: 16px;
+            }
         }
 
         nav {
@@ -171,7 +172,9 @@
         a:hover {
             color: rgb(122, 85, 255);
         }
-
+        .textbox {
+            font-size: 20px;
+        }
         .message {
             color: black;
             width: 300px;
@@ -209,7 +212,7 @@
     <div>
 
         <div>
-            <h1><strong>Contact</strong></h2>
+            <h2><strong>Contact:</strong></h2>
             <legend></legend>
             <br/>
             <h4><strong>Instagram:</strong></h4>
