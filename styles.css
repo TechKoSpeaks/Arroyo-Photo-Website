@@ -27,6 +27,7 @@ body {
   font-family: "Trebuchet MS";
   animation: changeBg 20s infinite;
   position: fixed;
+  vertical-align: top;
 }
 
 @keyframes changeBg {
@@ -360,12 +361,7 @@ legend {
   white-space: normal;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
+
 h1,
 h2,
 h3,
@@ -570,16 +566,7 @@ fieldset:disabled a.btn {
 .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(60, 60, 60, 0.5);
 }
-.btn-secondary {
-  color: #1a1a1a;
-  background-color: #fff;
-  border-color: #fff;
-}
-.btn-secondary:hover {
-  color: #1a1a1a;
-  background-color: #ececec;
-  border-color: #e6e6e6;
-}
+
 . input[type="button"].btn-block,
 input[type="reset"].btn-block,
 input[type="submit"].btn-block {
@@ -597,17 +584,6 @@ input[type="submit"].btn-block {
   opacity: 0;
 }
 
-.btn-toolbar {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-.btn-toolbar .input-group {
-  width: auto;
-}
 .btn-group > .btn-group:not(:first-child),
 .btn-group > .btn:not(:first-child) {
   margin-left: 0;
@@ -630,11 +606,7 @@ input[type="submit"].btn-block {
 .nav-link:hover {
   text-decoration: none;
 }
-.nav-link.disabled {
-  color: #919aa1;
-  pointer-events: none;
-  cursor: default;
-}
+
 
 .navbar {
   position: relative;
