@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroyo Photography</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="aleanddru.jpg">
+    <link rel="preload" as="image" href="background.jpg">
+    <link rel="preload" as="image" href="backshot.jpg">
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -47,12 +51,18 @@
             display: flex;
         }
 
-        h1,
-        h2,
+        h1 {
+            font-size: 55px;
+        }
+
+        h2 {
+            font-size: 45px;
+        }
         h3,
         h4 {
             text-align: center;
             font-weight: 1000;
+            font-size: 30px
         }
 
 
@@ -93,28 +103,38 @@
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             body {
 
-                width: 100%;
-                height: 100%;
-                background: stretch;
+                width: auto;
+                height: auto;
+                background: center no-repeat;
             }
 
         }
 
         @media screen and (min-width: 601px) {
             .navheader {
-                font-size: 50px;
+                font-size: 60px;
             }
+
             .navbar li {
                 text-align: center;
                 margin-right: 20px;
             }
         }
 
+        @media screen and (min-device-width : 601px) and (max-device-width : 800px){
+            .navheader {
+                font-size: 45px;
+            }
+
+        }
+
         @media screen and (max-width: 600px) {
             .navheader {
-                font-size: 23px;
+                font-size: 45px;
                 text-align: center;
                 padding: 1px;
+                margin: 2px;
+                line-height: 27pt;
             }
 
             .navbar li {
@@ -131,8 +151,12 @@
                 padding-right: 12px;
 
             }
+
             h3 {
                 font-size: 10px;
+            }
+            h2 {
+                font-size: 32px;
             }
         }
 
@@ -151,15 +175,17 @@
         a:hover {
             color: rgb(122, 85, 255);
         }
+        
     </style>
 </head>
 
-<body>
-
+<body class="wrapper">
     <nav class="navbar navbar-expand-lg">
         <div class="navheader navbar-brand" href="./index.html">
             <strong>Diana Arroyo Photography</strong>
         </div>
+        <br/>
+        <br/>
 
         <ul class="navitems">
             <li><a href="./index.html" id="Logo">Home</a></li>
@@ -170,39 +196,32 @@
 
     </nav>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <fieldset>
 
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+        <footer class="welcomeText form-group">
+            <h2 class="display-4">Intimate Couples and Portrait <strong>Photography</strong></h2>
+            <h3 class="display-6">Based in <strong> San Diego, California</strong></h3>
 
-
-    <footer class="welcomeText form-group">
-        <h3 class="display-4">Intimate Couples and Portrait <strong>Photography</strong></h3>
-        <h3 class="display-6">Based in <strong> San Diego, California</strong></h3>
-        <a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
-        <a href="https://www.gmail.com" class="fa fa-google"></a>
-    </footer>
-
-
-
+            <a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
+            <a href="https://www.gmail.com" class="fa fa-google"></a>
+        </footer>
+    </fieldset>
 
     <p class="lead">
         <a class="btn btn-primary btn-md" href="./portfolio.html" role="button">Galleries</a>
     </p>
+
 
 </body>
 

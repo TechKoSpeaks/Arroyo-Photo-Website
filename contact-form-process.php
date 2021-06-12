@@ -2,7 +2,7 @@
 if (isset($_POST['Email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "tkospeaks@gmail.com", "dianaarroyophotography@gmail.com";
+    $email_to = "tkospeaks@gmail.com";
     $email_subject = "Website Contact";
 
     function problem($error)
@@ -69,7 +69,7 @@ if (isset($_POST['Email'])) {
 
     <!-- include your success message below -->
 
-    Thank you for contacting us. We will be in touch with you very soon.
+    Thank you for contacting me with your inquiry. I will be in touch with you very soon!
 
 <?php
 }
