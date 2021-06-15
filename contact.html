@@ -51,12 +51,14 @@
         h2 {
             font-size: 45px;
         }
+
         h3,
         h4 {
             text-align: center;
             font-weight: 1000;
             font-size: 25px
         }
+
         h5 {
             font-size: 20px;
         }
@@ -111,7 +113,7 @@
             }
         }
 
-        @media screen and (min-device-width : 601px) and (max-device-width : 800px){
+        @media screen and (min-device-width : 601px) and (max-device-width : 800px) {
             .navheader {
                 font-size: 45px;
             }
@@ -126,9 +128,10 @@
                 margin: 2px;
                 line-height: 27pt;
             }
+
             .textbox {
-            font-size: 16px;
-        }
+                font-size: 16px;
+            }
 
             .navbar li {
                 text-align: center;
@@ -148,9 +151,11 @@
             h3 {
                 font-size: 10px;
             }
+
             h2 {
                 font-size: 32px;
             }
+
             h5 {
                 font-size: 16px;
             }
@@ -171,9 +176,11 @@
         a:hover {
             color: rgb(122, 85, 255);
         }
+
         .textbox {
             font-size: 20px;
         }
+
         .message {
             color: black;
             width: 300px;
@@ -189,8 +196,8 @@
         <div class="navheader navbar-brand" href="./index.html">
             <strong>Diana Arroyo Photography</strong>
         </div>
-        <br/>
-        <br/>
+        <br />
+        <br />
 
         <ul class="navitems">
             <li><a href="./index.html" id="Logo">Home</a></li>
@@ -213,12 +220,15 @@
         <div>
             <h2><strong>Contact:</strong></h2>
             <legend></legend>
-            <br/>
+            <br />
             <h4><strong>Instagram:</strong></h4>
             <h5><a href="https://www.instagram.com/diana_shoots/">diana_shoots</a></h5>
             <h4><strong>Email:</strong></h4>
             <h5>
-                <a href="https://www.gmail.com/"><dianaarroyophotography@gmail class="com">dianarroyophotography@gmail.com</dianaarroyophotography@gmail></a>
+                <a href="https://www.gmail.com/">
+                    <dianaarroyophotography@gmail class="com">dianarroyophotography@gmail.com
+                    </dianaarroyophotography@gmail>
+                </a>
             </h5>
         </div>
 
@@ -229,40 +239,42 @@
         <label>
             <h2><strong>Message me:</strong></h2>
         </label>
-        <fieldset>
-            <legend></legend>
+        <form>
+            <fieldset>
+                <legend></legend>
 
-            <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
+                <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
 
-                <div class="fcf-form-group">
-                    <label for="Name" class="fcf-label">Your name</label>
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="message fcf-form-control" required>
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="message fcf-form-control" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="fcf-form-group">
-                    <label for="Email" class="fcf-label">Your email address</label>
-                    <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="message fcf-form-control" required>
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="message fcf-form-control" required>
+                        </div>
+                        <div id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
+                            else.</div>
                     </div>
-                    <div id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
-                        else.</div>
-                </div>
 
-                <div class="fcf-form-group">
-                    <label for="Message" class="fcf-label">Your message</label>
-                    <div class="fcf-input-group">
-                        <textarea class="message" id="Message" name="Message" class="fcf-form-control" rows="10"
-                            maxlength="3000" required></textarea>
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea class="message" id="Message" name="Message" class="fcf-form-control" rows="10"
+                                maxlength="3000" required></textarea>
+                        </div>
                     </div>
-                </div>
 
-                <div class="fcf-form-group">
-                    <input type="submit" id="fcf-button" value="submit"
-                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block btn btn-primary"></input>
-                </div>
-        </fieldset>
+                    <div class="fcf-form-group">
+                        <input type="submit" id="fcf-button" value="submit"
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block btn btn-primary"></input>
+                    </div>
+                </form>
+            </fieldset>
         </form>
     </div>
 
