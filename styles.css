@@ -76,6 +76,9 @@ a {
   color:rgb(151, 128, 128);
   text-align: center;
 }
+a:hover {
+  color: rgb(245, 50, 245);
+}
 
 .navbar {
   font-size: 25px;
@@ -142,7 +145,7 @@ button {
   }
 
   a:hover {
-    color: rgb(122, 85, 255);
+    color: rgb(129, 129, 255);
   }
 
   .navitems {
@@ -166,7 +169,7 @@ nav li {
 
 
 a:hover {
-  color: rgb(122, 85, 255);
+  color: rgb(245, 50, 245);
 }
 :root {
   --breakpoint-xs: 0;
@@ -245,12 +248,10 @@ a:hover {
   text-decoration: underline;
 }
 
-
 img {
   vertical-align: middle;
   border-style: none;
 }
-
 
 button {
   border-radius: 0;
@@ -259,26 +260,6 @@ button {
 button,
 input {
   overflow: visible;
-}
-button,
-select {
-  text-transform: none;
-}
-[role="button"] {
-  cursor: pointer;
-}
-
-[type="button"],
-[type="reset"],
-[type="submit"],
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-  resize: vertical;
 }
 
 legend {
@@ -371,8 +352,6 @@ h6 {
 }
 
 
-
-
 .form-control {
   display: block;
   width: 100%;
@@ -400,9 +379,6 @@ h6 {
   text-decoration: none;
 }
 
-
-
-
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -414,12 +390,6 @@ h6 {
 .fade:not(.show) {
   opacity: 0;
 }
-
-.btn-group > .btn-group:not(:first-child),
-.btn-group > .btn:not(:first-child) {
-  margin-left: 0;
-}
-
 
 .nav-link {
   display: block;
@@ -442,21 +412,6 @@ h6 {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.5rem 1rem;
-}
-.navbar .container,
-.navbar .container-fluid,
-.navbar .container-lg,
-.navbar .container-md,
-.navbar .container-sm,
-.navbar .container-xl {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .navbar {
