@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroyo Photography</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" as="image" href="aleanddru.jpg">
-    <link rel="preload" as="image" href="background.jpg">
-    <link rel="preload" as="image" href="backshot.jpg">
+
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    </script>
 
 
     <style>
         html,
         body {
             text-align: center;
-            color: white;
+            color: rgb(255, 255, 255);
             max-width: 100%;
             max-height: 100%;
             width: 100%;
@@ -33,6 +38,35 @@
             padding: 0px;
             overflow-x: hidden;
             font-family: 'Trebuchet MS';
+        }
+
+        .footy {
+            position: fixed;
+            margin-left: 15%;
+            bottom: 0;
+            color: rgb(255, 255, 255) !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        container {
+            text-align: center;
+            background: stretch;
+            margin-left: 0px !important;
+            margin-bottom: 30px !important;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 90%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: 'Trebuchet MS';
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-align: center;
         }
 
         .navbar {
@@ -49,97 +83,103 @@
         }
 
         h2 {
-            font-size: 45px;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
         }
 
         h3,
         h4 {
             text-align: center;
             font-weight: 1000;
-            font-size: 25px
+            font-size: 25px;
+            color: rgb(255, 255, 255);
         }
 
-        h5 {
-            font-size: 20px;
-        }
-
-        div {
+        .h5 {
             color: white;
         }
 
-        ul,
-        li,
-        a {
-            color: white;
-        }
 
-        textarea {
-            padding: 30px;
-            width: 100px;
-
-        }
-
-        button {
+        input {
+            font-size: 40px;
             color: black;
         }
 
-        .fa {
-            padding: 20px;
-            font-size: 30px;
-            width: 30px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 50%;
-        }
+
+
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             body {
 
                 width: auto;
                 height: auto;
-                background: center no-repeat;
+                background: fixed no-repeat;
+            }
+
+            .footy {
+                margin-left: 0;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+            container {
+
+                width: 100%;
+                height: 70%;
+                background: center;
+            }
+            .contact {
+                color: rgb(129, 129, 255);
+                font-size: 15px;
+            }
+
+            a {
+                text-align: center;
             }
 
         }
 
-        @media screen and (min-width: 610px) {
+        @media screen and (min-width: 601px) {
             .navheader {
-                font-size: 60px;
+                font-size: 40px;
+            }
+
+            .footy {
+                margin-left: 20%;
+            }
+
+            .contact {
+                color: rgb(129, 129, 255);
+                font-size: 28px;
             }
 
             .navbar li {
                 text-align: center;
                 margin-right: 20px;
+                color: rgb(173, 147, 147);
             }
         }
 
-        @media screen and (min-device-width : 601px) and (max-device-width : 800px) {
-            .navheader {
-                font-size: 45px;
-            }
-
-        }
 
         @media screen and (max-width: 600px) {
             .navheader {
-                font-size: 45px;
+                font-size: 40px;
                 text-align: center;
                 padding: 1px;
                 margin: 2px;
                 line-height: 27pt;
             }
 
-            .textbox {
-                font-size: 16px;
-            }
-
             .navbar li {
                 text-align: center;
                 margin-right: 10px;
+                color: rgb(173, 147, 147);
             }
 
             a:hover {
-                color: rgb(122, 85, 255)
+                color: rgb(75, 233, 27)
             }
 
             .navitems {
@@ -149,23 +189,16 @@
             }
 
             h3 {
-                font-size: 10px;
+                font-size: 8px;
             }
 
             h2 {
                 font-size: 32px;
             }
-
-            h5 {
-                font-size: 16px;
-            }
         }
 
         nav {
-
-
             color: white;
-
         }
 
         nav li {
@@ -174,19 +207,7 @@
         }
 
         a:hover {
-            color: rgb(122, 85, 255);
-        }
-
-        .textbox {
-            font-size: 20px;
-        }
-
-        .message {
-            color: black;
-            width: 300px;
-            height: 40px;
-            margin: 8px, 0;
-            box-sizing: border-box;
+            color: rgb(40, 255, 21);
         }
     </style>
 </head>
@@ -197,101 +218,37 @@
             <strong>Diana Arroyo Photography</strong>
         </div>
         <br />
-        <br />
 
-        <ul class="navitems">
+        <ul>
             <li><a href="./index.html" id="Logo">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./portfolio.html">Galleries</a></li>
             <li><a href="./contact.html">Contact</a></li>
+            <li><a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a></li>
         </ul>
-
     </nav>
+    <div class="col">
+        <container class="row">
+            <div class="footy">
+                <div>
+                    <h2><strong>Contact:</strong></h2>
+                    <legend></legend>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div>
-
-        <div>
-            <h2><strong>Contact:</strong></h2>
-            <legend></legend>
-            <br />
-            <h4><strong>Instagram:</strong></h4>
-            <h5><a href="https://www.instagram.com/diana_shoots/">diana_shoots</a></h5>
-            <h4><strong>Email:</strong></h4>
-            <h5>
-                <a href="https://www.gmail.com/">
-                    <dianaarroyophotography@gmail class="com">dianarroyophotography@gmail.com
-                    </dianaarroyophotography@gmail>
-                </a>
-            </h5>
-        </div>
+                    <h4>Professional Inquiries Please Contact via Email or Instagram!</h4>
+                    <h4><strong>Instagram:</strong></h4>
+                    <h5><a href="https://www.instagram.com/diana_shoots/" class="contact">diana_shoots</a></h5>
+                    <h4><strong>Email:</strong></h4>
+                    <h5>
+                        <a href="https://www.gmail.com/" class="contact">
+                            <dianaarroyophotography@gmail class="com">dianarroyophotography@gmail.com
+                            </dianaarroyophotography@gmail>
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </container>
 
 
-
-    </div>
-    <div class="form-group">
-        <label>
-            <h2><strong>Message me:</strong></h2>
-        </label>
-        <form>
-            <fieldset>
-                <legend></legend>
-
-                <form id="fcf-form-id" class="fcf-form-class" method="POST" action="contact-form-process.php">
-
-                    <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">Your name</label>
-                        <div class="fcf-input-group">
-                            <input type="text" id="Name" name="Name" class="message fcf-form-control" required>
-                        </div>
-                    </div>
-
-                    <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">Your email address</label>
-                        <div class="fcf-input-group">
-                            <input type="email" id="Email" name="Email" class="message fcf-form-control" required>
-                        </div>
-                        <div id="emailHelp" class="form-text text-muted">I'll never share your email with anyone
-                            else.</div>
-                    </div>
-
-                    <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Your message</label>
-                        <div class="fcf-input-group">
-                            <textarea class="message" id="Message" name="Message" class="fcf-form-control" rows="10"
-                                maxlength="3000" required></textarea>
-                        </div>
-                    </div>
-
-                    <div class="fcf-form-group">
-                        <input type="submit" id="fcf-button" value="submit"
-                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block btn btn-primary"></input>
-                    </div>
-                </form>
-            </fieldset>
-        </form>
-    </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <footer class="welcomeText form-group">
-        <a href="https://www.instagram.com/diana_shoots/" class="fa fa-instagram"></a>
-        <a href="https://www.gmail.com" class="fa fa-google"></a>
-        <a href="#https://www.facebook.com/arroyo.di" class="fa fa-facebook"></a>
-    </footer>
-
-    <p class="lead">
-        <a class="btn btn-primary btn-md" href="./portfolio.html" role="button">Galleries</a>
-    </p>
 
 </body>
 
